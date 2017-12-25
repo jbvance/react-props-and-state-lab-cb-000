@@ -3,6 +3,12 @@ import React from 'react';
 class Pet extends React.Component {
   constructor(props) {
     super(props);
+
+    this.adoptPet = this.adoptPet.bind(this);
+  }
+
+  adoptPet(id) {
+
   }
 
   render() {
