@@ -3,14 +3,13 @@ import React from 'react';
 class Pet extends React.Component {
   constructor(props) {
     super(props);
-    
   }
 
   render() {
     return (
       <div className="card">
         <div className="content">
-          <a className="header">Pet name (gender: ♂ or ♀)</a>
+          <a className="header">Pet {this.props.name} (gender: {this.props.gender === 'male' ? ♂ : ♀ }</a>
           <div className="meta">
             <span className="date">Pet type</span>
           </div>
